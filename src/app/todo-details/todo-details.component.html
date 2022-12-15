@@ -1,0 +1,20 @@
+<title>welcome to do </title>
+ <table   class="table" style="width: 800px;margin-left: 190px;margin-top: 100px;">
+    <thead>
+      <tr>
+        <th scope="col">user ID</th>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Completed</th>
+     
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of Todo">
+        <th scope="row">{{t.userId}}</th>
+        <td>{{t.id}}</td>
+        <td>{{t.title}}</td>
+        <td>{{t.completed}}</td>
+      </tr>
+    </tbody>
+  </table>
